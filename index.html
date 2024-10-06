@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hoja de Vida - Valentina Osorio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Estilos para la Navbar */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Estilos para el Jumbotron */
+        .jumbotron {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .jumbotron p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #4CAF50;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        /* Contenedor general */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos de las columnas */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .col-4 {
+            flex: 0 0 33.33%;
+            padding: 15px;
+        }
+
+        .col-8 {
+            flex: 0 0 66.66%;
+            padding: 15px;
+        }
+
+        /* Estilos para el card */
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            padding: 5px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre Mí</a>
+        <a href="#">Experiencia</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Valentina Osorio</h1>
+        <p>Psicóloga Profesional con más de 5 años de experiencia</p>
+        <button class="btn">Contactame</button>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- Fila con la imagen y la información personal -->
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://cristypalacios.com/wp-content/uploads/2020/07/poses-de-perfil-profesional-mujeres-768x768.jpg" alt="Foto de Valentina Osorio" class="profile-photo">
+                    <h2>Valentina Osorio</h2>
+                    <p>Psicóloga Profesional</p>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li><strong>Correo Electrónico:</strong> valentina.osorio@gmail.com</li>
+                    <li><strong>Teléfono:</strong> +57 300 123 4567</li>
+                    <li><strong>Ubicación:</strong> Medellín, Colombia</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fila con la educación y experiencia -->
+        <div class="row">
+            <div class="col-4">
+                <h3>Educación</h3>
+                <ul>
+                    <li>Psicología, Universidad de Antioquia - 2018</li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <h3>Experiencia Profesional</h3>
+                <ul>
+                    <li>Psicóloga Clínica, Clínica del Valle, 2019-2023</li>
+                    <li>Consultora Independiente en Salud Mental, 2023-presente</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fila con habilidades -->
+        <div class="row">
+            <div class="col-12">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Evaluación Psicológica</li>
+                    <li>Terapia Cognitivo Conductual</li>
+                    <li>Manejo de Estrés y Ansiedad</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
